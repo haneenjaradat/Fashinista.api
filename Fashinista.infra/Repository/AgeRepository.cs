@@ -57,7 +57,7 @@ namespace Fashinista.infra.Repository
             p.Add("Age_Group ", age.AgePeriod, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("StartAge", age.StartAge, dbType: DbType.Date, direction: ParameterDirection.Input);
             p.Add("EndAge", age.EndAge, dbType: DbType.Date, direction: ParameterDirection.Input);
-            var result = context.connection.ExecuteAsync("Age_Package.Insert_Age", p, commandType: CommandType.StoredProcedure);
+            var result = context.connection.ExecuteAsync("Age_Package.Update_Age", p, commandType: CommandType.StoredProcedure);
             return true;
         }
     }

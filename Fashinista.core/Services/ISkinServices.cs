@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Fashinista.core.Repository
+namespace Fashinista.core.Services
 {
-    public interface ISkinRepository
+    public interface ISkinServices
     {
         public string insert_Skin(Skin skin);//from service 
         public bool delete_Skin(int id);

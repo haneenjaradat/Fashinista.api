@@ -31,10 +31,13 @@ namespace Fashinista.api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            
             services.AddScoped<IdbContext,dbContext>();
             services.AddScoped<IAgeRepository, AgeRepository>();
             services.AddScoped<IAgeServices,AgeServices>();
+            services.AddScoped<ISkinRepository, SkinRepository>();
+            services.AddScoped<ISkinServices, SkinServices>();
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
