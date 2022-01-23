@@ -1,0 +1,10 @@
+C:\Users\AMCT\source\repos\Fashinista.api\Fashinista.core\bin\Debug\netcoreapp3.1\Fashinista.core.deps.json
+C:\Users\AMCT\source\repos\Fashinista.api\Fashinista.core\bin\Debug\netcoreapp3.1\Fashinista.core.dll
+C:\Users\AMCT\source\repos\Fashinista.api\Fashinista.core\bin\Debug\netcoreapp3.1\Fashinista.core.pdb
+C:\Users\AMCT\source\repos\Fashinista.api\Fashinista.core\obj\Debug\netcoreapp3.1\Fashinista.core.csproj.AssemblyReference.cache
+C:\Users\AMCT\source\repos\Fashinista.api\Fashinista.core\obj\Debug\netcoreapp3.1\Fashinista.core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AMCT\source\repos\Fashinista.api\Fashinista.core\obj\Debug\netcoreapp3.1\Fashinista.core.AssemblyInfoInputs.cache
+C:\Users\AMCT\source\repos\Fashinista.api\Fashinista.core\obj\Debug\netcoreapp3.1\Fashinista.core.AssemblyInfo.cs
+C:\Users\AMCT\source\repos\Fashinista.api\Fashinista.core\obj\Debug\netcoreapp3.1\Fashinista.core.csproj.CoreCompileInputs.cache
+C:\Users\AMCT\source\repos\Fashinista.api\Fashinista.core\obj\Debug\netcoreapp3.1\Fashinista.core.dll
+C:\Users\AMCT\source\repos\Fashinista.api\Fashinista.core\obj\Debug\netcoreapp3.1\Fashinista.core.pdb
