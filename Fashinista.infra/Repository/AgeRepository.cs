@@ -53,7 +53,7 @@ namespace Fashinista.infra.Repository
         public bool Update_Age(Age age)
         {
             var p = new DynamicParameters();
-
+            p.Add("ID_Age", age.Id, dbType: DbType.Int32, direction: ParameterDirection.Input);
             p.Add("Age_Group ", age.AgePeriod, dbType: DbType.String, direction: ParameterDirection.Input);
             p.Add("StartAge", age.StartAge, dbType: DbType.Date, direction: ParameterDirection.Input);
             p.Add("EndAge", age.EndAge, dbType: DbType.Date, direction: ParameterDirection.Input);
