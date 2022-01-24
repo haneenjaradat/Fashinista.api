@@ -45,7 +45,7 @@ namespace Fashinista.infra.Repository
         {
             var p = new DynamicParameters();
 
-            p.Add("SkinColor", skin.ColorSkin, dbType: DbType.String, direction: ParameterDirection.Input);
+            p.Add("SkinColor", skin.Color_Skin, dbType: DbType.String, direction: ParameterDirection.Input);
             var result = context.connection.ExecuteAsync("Skin_Package.insert_Skin", p, commandType: CommandType.StoredProcedure);
             return "valid";
         }
@@ -54,7 +54,7 @@ namespace Fashinista.infra.Repository
         {
             var p = new DynamicParameters();
             p.Add("Skin_ID", skin.Id, dbType: DbType.Int32, direction: ParameterDirection.Input);
-            p.Add("SkinColor", skin.ColorSkin, dbType: DbType.String, direction: ParameterDirection.Input);
+            p.Add("SkinColor", skin.Color_Skin, dbType: DbType.String, direction: ParameterDirection.Input);
             var result = context.connection.ExecuteAsync("Skin_Package.update_Skin", p, commandType: CommandType.StoredProcedure);
             return true;
         }

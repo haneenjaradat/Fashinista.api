@@ -37,6 +37,10 @@ namespace Fashinista.api
             services.AddScoped<IAgeServices,AgeServices>();
             services.AddScoped<ISkinRepository, SkinRepository>();
             services.AddScoped<ISkinServices, SkinServices>();
+            services.AddScoped<IDeliveryRepository, DeliveryRepository>();
+            services.AddScoped<IDeliveryServices, DeliveryServices>();
+            services.AddScoped<IFroleRepository, FroleRepository>();
+            services.AddScoped<IFroleServices,FroleServices>();
             services.AddControllers();
         }
 

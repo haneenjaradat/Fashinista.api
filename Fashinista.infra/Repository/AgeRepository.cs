@@ -20,7 +20,7 @@ namespace Fashinista.infra.Repository
         public bool Delete_Age(int id)
         {
             var p = new DynamicParameters();
-            p.Add("ID_Age", p, dbType: DbType.Int32, direction: ParameterDirection.Input);
+            p.Add("ID_Age",id, dbType: DbType.Int32, direction: ParameterDirection.Input);
             var item = context.connection.ExecuteAsync("Age_Package.Delete_Age", p, commandType: CommandType.StoredProcedure);
             return true;
         }
@@ -28,7 +28,7 @@ namespace Fashinista.infra.Repository
         public Age Get_Age_By_Id(int id)
         {
             var p = new DynamicParameters();
-            p.Add("ID_Age", id, dbType: DbType.Int32, direction: ParameterDirection.Input);
+            p.Add("ID_Age",id, dbType: DbType.Int32, direction: ParameterDirection.Input);
             var result = context.connection.Query<Age>("Age_Package.Get_Age_By_Id", p, commandType: CommandType.StoredProcedure);
             return result.SingleOrDefault();
         }
@@ -43,9 +43,9 @@ namespace Fashinista.infra.Repository
         {
             var p = new DynamicParameters();
             
-            p.Add("Age_Group ", age.AgePeriod, dbType: DbType.String, direction: ParameterDirection.Input);
-            p.Add("StartAge", age.StartAge, dbType: DbType.Date, direction: ParameterDirection.Input);
-            p.Add("EndAge", age.EndAge, dbType: DbType.Date, direction: ParameterDirection.Input);
+            p.Add("Age_Group", age.AGE_PERIOD, dbType: DbType.String, direction: ParameterDirection.Input);
+            p.Add("A_StartAge", age.START_AGE, dbType: DbType.DateTime, direction: ParameterDirection.Input);
+            p.Add("A_EndAge", age.END_AGE, dbType: DbType.DateTime, direction: ParameterDirection.Input);
             var result = context.connection.ExecuteAsync("Age_Package.Insert_Age", p, commandType: CommandType.StoredProcedure);
             return "valid";
         }
@@ -54,9 +54,9 @@ namespace Fashinista.infra.Repository
         {
             var p = new DynamicParameters();
             p.Add("ID_Age", age.Id, dbType: DbType.Int32, direction: ParameterDirection.Input);
-            p.Add("Age_Group ", age.AgePeriod, dbType: DbType.String, direction: ParameterDirection.Input);
-            p.Add("StartAge", age.StartAge, dbType: DbType.Date, direction: ParameterDirection.Input);
-            p.Add("EndAge", age.EndAge, dbType: DbType.Date, direction: ParameterDirection.Input);
+            p.Add("Age_Group", age.AGE_PERIOD, dbType: DbType.String, direction: ParameterDirection.Input);
+            p.Add("A_StartAge", age.START_AGE, dbType: DbType.DateTime, direction: ParameterDirection.Input);
+            p.Add("A_EndAge", age.END_AGE, dbType: DbType.DateTime, direction: ParameterDirection.Input);
             var result = context.connection.ExecuteAsync("Age_Package.Update_Age", p, commandType: CommandType.StoredProcedure);
             return true;
         }

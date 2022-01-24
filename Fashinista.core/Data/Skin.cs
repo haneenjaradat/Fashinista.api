@@ -8,7 +8,7 @@ namespace Fashinista.core.Data
     {
 
         public decimal Id { get; set; }
-        public string ColorSkin { get; set; }
+        public string Color_Skin { get; set; }
 
         public virtual ICollection<Property> Properties { get; set; }
     }

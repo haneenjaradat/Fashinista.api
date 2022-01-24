@@ -8,11 +8,13 @@ namespace Fashinista.core.Data
    public class Delivery
     {
         public decimal Id { get; set; }
-        public decimal DeliveryId { get; set; }
+        public decimal Delivery_Id { get; set; }
         public string Xlit { get; set; }
         public string Ylit { get; set; }
 
-        [ForeignKey("DeliveryId")]
+        public decimal Status { get; set; }
+
+        [ForeignKey("Delivery_Id")]
         public virtual User DeliveryNavigation { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
     }
